@@ -11,7 +11,7 @@ function FooterSection() {
                         <a href="/">
                             <h1 className="text-[30px] leading-9 font-light text-[#FFFFFF] font-cormorant">Medical Center</h1>
                         </a>
-                        <p className="text-[16px] font-normal leading-5 text-[#FFFFFF80]">
+                        <p className="text-[18px] font-normal leading-6 text-[#FFFFFF80]">
                             Providing world-class healthcare with compassion, innovation, and excellence for over 25 years.
                         </p>
                     </div>
