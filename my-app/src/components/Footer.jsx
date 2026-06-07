@@ -57,7 +57,7 @@ function FooterSection() {
                     <div className="flex gap-5 lg:gap-7">
                         <a href="/"><p className="text-[16px] lg:text-[16px] font-normal leading-5 tracking-[.35px] text-[#FFFFFF80] hover:text-[#DDA23C] transition-colors duration-500 ease-in-out">Privacy</p></a>
                         <a href="/"><p className="text-[16px] lg:text-[16px] font-normal leading-5 tracking-[.35px] text-[#FFFFFF80] hover:text-[#DDA23C] transition-colors duration-500 ease-in-out">Terms</p></a>
-                        <a href="/"><p className="text-[16px] lg:text-[16px] font-normal leading-5 tracking-[.35px] text-[#FFFFFF80] hover:text-[#DDA23C] transition-colors duration-500 ease-in-out">Cookies Policy</p></a>
+                        <a href="/"><p className="text-[15px] lg:text-[16px] font-normal leading-5 tracking-[.35px] text-[#FFFFFF80] hover:text-[#DDA23C] transition-colors duration-500 ease-in-out">Cookies Policy</p></a>
                     </div>
                 </div>
 
