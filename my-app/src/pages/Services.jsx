@@ -55,16 +55,16 @@ function ServiceSection() {
       {/* HERO SECTION */}
       <section
         style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url(${bg_image})` }}
-        className='relative w-full py-32 pt-20 lg:py-50 lg:pt-32 bg-cover bg-center bg-no-repeat'
+        className='relative w-full py-65 pt-40 lg:py-50 lg:pt-32 bg-cover bg-center bg-no-repeat'
       >
         <div className="flex flex-col bottom-8 left-4 md:bottom-10 md:left-6 lg:bottom-13 lg:left-8 gap-2 lg:gap-3 absolute">
-          <p className="text-[10px] md:text-[11px] lg:text-[12px] leading-4 tracking-[3.6px] font-medium text-[#DDA23C] uppercase">
+          <p className="text-[12px] md:text-[12px] lg:text-[12px] leading-4 tracking-[3.6px] font-medium text-[#DDA23C] uppercase">
             Centers of Excellence
           </p>
-          <h1 className="text-[32px] md:text-[44px] lg:text-[60px] leading-tight lg:leading-15 font-semibold text-[#FFFFFF] font-playfair">
+          <h1 className="text-[60px] md:text-[44px] lg:text-[60px] leading-tight lg:leading-15 font-semibold text-[#FFFFFF] font-playfair">
             <span className='italic'>25+ Specialties, </span> One Standard
           </h1>
-          <p className="text-[14px] md:text-[16px] lg:text-[20px] leading-6 lg:leading-7 font-normal text-[#B3B3B3]">
+          <p className="text-[20px] md:text-[16px] lg:text-[20px] leading-6 lg:leading-7 font-normal text-[#B3B3B3]">
             Every department at Elysium operates at the highest level of clinical excellence.
           </p>
         </div>
