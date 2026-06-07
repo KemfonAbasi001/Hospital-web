@@ -33,10 +33,10 @@ function Card(props) {
         <div onClick={scrollToTop} className="w-full relative h-95 overflow-hidden group rounded-2xl md:h-80 lg:h-92.5 cursor-pointer">
             <img src={props.imgSrc} alt="" className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"/>
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/40"></div>
-            <div className="absolute bottom-4 left-4 lg:bottom-7 lg:left-5 flex flex-col gap-0">
-                <h1 className="text-[20px] md:text-[24px] lg:text-[28px] font-normal text-[#FFFFFF] font-playfair">{props.title}</h1>
-                <p className="text-[12px] md:text-[13px] lg:text-[14px] leading-5 tracking-[.35px] font-normal text-[#FFFFFF] font-inter">{props.details}</p>
-                <a href="" className="text-[12px] lg:text-[14px] font-normal mt-2 text-[#D19F47] flex gap-1 items-center">
+            <div className="absolute bottom-8 left-6 lg:bottom-7 lg:left-5 flex flex-col gap-0">
+                <h1 className="text-[28px] md:text-[24px] lg:text-[28px] font-normal text-[#FFFFFF] font-playfair">{props.title}</h1>
+                <p className="text-[15px] md:text-[13px] lg:text-[14px] leading-5 tracking-[.35px] font-normal text-[#FFFFFF] font-inter">{props.details}</p>
+                <a href="" className="text-[15px] lg:text-[14px] font-normal mt-2 text-[#D19F47] flex gap-1 items-center">
                     Learn More
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 24" fill="none" stroke="#D19F47" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform">
                         <path d="M5 12h14"></path>
@@ -64,7 +64,7 @@ function ServiceSection() {
           <h1 className="text-[60px] md:text-[44px] lg:text-[60px] leading-tight lg:leading-15 font-semibold text-[#FFFFFF] font-playfair">
             <span className='italic'>25+ Specialties, </span> One Standard
           </h1>
-          <p className="text-[20px] md:text-[16px] lg:text-[20px] leading-6 lg:leading-7 font-normal text-[#B3B3B3]">
+          <p className="text-[20px] md:text-[16px] lg:text-[20px] leading-87lg:leading-7 font-normal text-[#B3B3B3]">
             Every department at Elysium operates at the highest level of clinical excellence.
           </p>
         </div>
@@ -76,13 +76,13 @@ function ServiceSection() {
 
           {/* Section Header */}
           <div className="text-center flex flex-col gap-2 lg:gap-3">
-            <p className="text-[10px] md:text-[11px] lg:text-[12px] leading-4 tracking-[3.6px] font-medium text-[#DDA23C] uppercase">
+            <p className="text-[12px] md:text-[11px] lg:text-[12px] leading-4 tracking-[3.6px] font-medium text-[#DDA23C] uppercase">
               200+ Physicians
             </p>
-            <h1 className="text-[30px] md:text-[38px] lg:text-[48px] leading-tight lg:leading-12 font-semibold text-[#151C28] font-playfair">
+            <h1 className="text-[36px] md:text-[38px] lg:text-[48px] leading-tight lg:leading-12 font-semibold text-[#151C28] font-playfair">
               Experts Who Define Excellence
             </h1>
-            <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-6 lg:leading-6.5 font-normal text-[#676F7E]">
+            <p className="text-[16px] md:text-[16px] lg:text-[18px] leading-6 lg:leading-6.5 font-normal text-[#676F7E]">
               Each physician at Elysium is a leader in their specialty — trained at the world's most prestigious institutions.
             </p>
           </div>
@@ -121,24 +121,24 @@ function ServiceSection() {
           <p className="text-[11px] lg:text-[13px] leading-4 tracking-[5.3px] font-medium text-[#DDA23C] uppercase">
             Begin Your Journey
           </p>
-          <h1 className="text-[30px] md:text-[38px] lg:text-[48px] leading-tight lg:leading-12 font-semibold text-[#FFFFFF] font-playfair">
+          <h1 className="text-[33px] md:text-[38px] lg:text-[48px] leading-tight lg:leading-12 font-semibold text-[#FFFFFF] font-playfair">
             Your Health Deserves{' '}
-            <span className='italic text-[#DDA23C]'>Nothing Less<br/></span> Than the Best
+            <span className='italic text-[#DDA23C]'>Nothing Less<br className='hidden md:block lg:block'/></span> Than the Best
           </h1>
-          <p className="text-[14px] md:text-[16px] lg:text-[18px] leading-7 font-normal text-[#AEACA9]">
-            Whether you need a second opinion, a specialized consultation, or emergency care — our doors are always open.
+          <p className="text-[16px] md:text-[16px] lg:text-[18px] leading-7 font-normal text-[#AEACA9]">
+            Whether you need a second opinion, a specialized consultation, or emergency<br className='hidden md:block lg:block'/> care — our doors are always open.
           </p>
 
           {/* Buttons: stack on mobile, row on tablet+ */}
-          <div className="flex flex-col sm:flex-row gap-3 lg:gap-5 w-full sm:w-auto">
-            <a href="/emergency" className="bg-[#DDA23C] text-black py-3.5 px-7 lg:py-3.75 lg:px-10 text-[13px] lg:text-[14px] leading-5 font-medium tracking-[.35px] rounded-3xl flex gap-1 items-center justify-center">
+          <div className="flex flex-col justify-center items-center sm:flex-row gap-3 lg:gap-5 w-full sm:w-auto">
+            <a href="/emergency" className="bg-[#DDA23C] text-black py-3.5 px-7 lg:py-3.75 lg:px-10 text-[13px] lg:text-[14px] leading-5 font-medium tracking-[.35px] rounded-3xl flex gap-1 items-center justify-center w-fit">
               Schedule a Consultation
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </a>
-            <a href="/emergency" className="flex gap-1 bg-[#ffffff26] border border-solid border-[#F8F6F2] text-[#F8F6F2] py-3.5 px-7 lg:py-3.75 lg:px-10 text-[13px] lg:text-[14px] leading-5 font-medium tracking-[.35px] rounded-3xl items-center justify-center">
+            <a href="/emergency" className="w-fit flex gap-1 bg-[#ffffff26] border border-solid border-[#F8F6F2] text-[#F8F6F2] py-3.5 px-7 lg:py-3.75 lg:px-10 text-[13px] lg:text-[14px] leading-5 font-medium tracking-[.35px] rounded-3xl items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone w-4 h-4">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
