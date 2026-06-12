@@ -17,7 +17,7 @@ function Card(props) {
         <div className="w-full relative overflow-hidden group rounded-2xl h-64 md:h-80 lg:h-92.5">
             <img src={props.imgSrc} alt="" className="h-full w-full block object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"/>
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/40"></div>
-            <div className="absolute bottom-8 left-6 lg:bottom-7 lg:left-5 flex flex-col gap-0">
+            <div className="absolute bottom-8 left-6 lg:bottom-7 lg:left-4.75 right-5 flex flex-col gap-0">
                 <h1 className="text-[28px] md:text-[24px] lg:text-[28px] font-normal text-[#FFFFFF] font-playfair">{props.title}</h1>
                 <p className="text-[15px] lg:text-[14px] leading-5 tracking-[.35px] font-normal text-[#FFFFFF] font-inter">{props.details}</p>
                 <a href="" className="text-[15px] lg:text-[14px] font-medium mt-2 text-[#D19F47] flex gap-1 items-center">
@@ -45,11 +45,11 @@ function HomeSection() {
           <p className="text-[12px] md:text-[11px] lg:text-[12px] leading-4 tracking-[4.8px] font-medium text-[#DDA23C] uppercase">
             World-Class Private Healthcare
           </p>
-          <h1 className="text-[55px] md:text-[52px] lg:text-[72px] leading-tight lg:leading-18 font-semibold text-[#FFFFFF] font-playfair">
-            Where Healing <br hidden md:block lg:block/><span className='italic text-[#DDA23C]'>Becomes</span> an Art
+          <h1 className="text-[55px] leading-[55px] md:text-[52px] lg:text-[72px] leading-tight lg:leading-18 font-semibold text-[#FFFFFF] font-playfair">
+            Where Healing <br md:block lg:flex/><span className='italic text-[#DDA23C]'>Becomes</span> an Art
           </h1>
           <p className="text-[18px] md:text-[16px] lg:text-[18px] leading-6 lg:leading-7.5 font-normal text-[#faf6f6]">
-            Experience medicine reimagined — where cutting-edge technology, world-renowned physicians, and unparalleled comfort converge to create a sanctuary of healing.
+            Experience medicine reimagined — where cutting-edge technology,<br/> world-renowned physicians, and unparalleled comfort converge to create<br/> a sanctuary of healing.
           </p>
 
           {/* Buttons: stack on mobile, row on tablet+ */}
@@ -83,7 +83,7 @@ function HomeSection() {
             <h1 className="text-[40px] md:text-[46px] lg:text-[65px] leading-tight lg:leading-17.5 text-[#151C28] font-medium font-playfair">
               A Legacy of <span className='italic text-[#DDA23C]'>Compassion</span>, a Future of Innovation
             </h1>
-            <p className="text-[17px] md:text-[16px] lg:text-[18px] leading-6.5 lg:leading-7.25 font-normal text-[#676F7E]">
+            <p className="text-[18px] md:text-[16px] lg:text-[18px] leading-6.5 lg:leading-7.25 font-normal text-[#676F7E]">
               For over two decades, Meridian Medical Center has been a beacon of hope — where every patient is family, every treatment is a promise, and every outcome is a testament to our unwavering commitment to excellence.
             </p>
           </div>

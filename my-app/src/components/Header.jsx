@@ -28,11 +28,11 @@ function NavBar() {
           <h1 className={`text-[20px] leading-7 tracking-[.5px] font-playfair font-semibold transition-colors duration-300 ${isScrolled ? 'text-[#151C28]' : 'text-[#FFFFFF]'}`}>Medical Center</h1>
         </a>  
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className='w-5 h-5'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" className='w-5 h-5 lg:hidden'>
         <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>
         </svg>
 
-        <ul className="flex gap-4 hidden">
+        <ul className="flex gap-4 hidden lg:flex">
           <li className="">
             <a href="/" className={`text-[16px] leading-5 ${isActive('/') ? 'font-semibold' : 'font-normal'} tracking-[.35px] transition-colors duration-300 ${isScrolled ? 'text-[#151C28]' : 'text-[#FFFFFF]'}`}>Home</a>
           </li>
@@ -51,7 +51,7 @@ function NavBar() {
           </li>
         </ul>
 
-        <div className="flex gap-3 hidden">
+        <div className="flex gap-3 hidden lg:flex">
           <a href="/emergency" className="flex gap justify-center items-center text-[.8rem] py-2.5 px-5 rounded-3xl leading-5 font-medium text-[#151C28] bg-[#DDA23C]">
             Book a Consultation
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right ml-2 w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
